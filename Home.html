@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            line-height: 1.5;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: aliceblue;
+        }
+
+        .Payment-mode {
+            height: 50px;
+            width: 50px;
+        }
+
+
+        .container {
+            max-width: 110px;
+            /* background-color: red; */
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+            line-height: 50px;
+        }
+
+        .footer {
+            background-color: rgb(26, 20, 22);
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: blueviolet;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+            background-color: red;
+        }
+
+        .footer-col h4::before {
+            position: absolute;
+            bottom: -10px;
+            background-color: blueviolet;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li a:hover {
+            color: rgb(214, 204, 223);
+            padding-left: 10px;
+        }
+
+        .row {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h1 {
+            text-align: center;
+        }
+
+        .section p {
+            text-align: center;
+        }
+
+        .tabel {
+            height: 30px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .check {
+            margin: 20px;
+        }
+
+        .button {
+            color: black;
+            position: absolute;
+            left: 400px;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .mail {
+            margin-left: 400px;
+        }
+
+        * {
+            background-color: black;
+            color: white;
+
+        }
+
+        img {
+            transition: transform .2s;
+            height: 200px;
+            width: 180px;
+            border-radius: 20PX;
+            margin: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+        }
+
+        a {
+            position: relative;
+            left: 1120px;
+            background-color: white;
+            border-radius: 19px;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 19px;
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+
+        }
+
+        span {
+            padding: 30px;
+            margin: 20px;
+
+        }
+
+        span:hover {
+            color: blueviolet;
+        }
+
+        p:hover {
+            color: blueviolet;
+        }
+
+        button {
+            background-color: blueviolet;
+            border-radius: 11px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 13px 40px;
+            margin: 45px;
+        }
+
+        button:hover {
+            color: chartreuse;
+
+        }
+
+        a:hover {
+            color: blueviolet;
+
+        }
+
+        .contents {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: large;
+            margin-top: 30px;
+
+
+        }
+
+        .contents1 {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .contents2 {
+            display: flex;
+            justify-content: space-evenly;
+            border-color: #273746;
+        }
+
+        .games1 {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .accesories {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .ooo {
+            height: 40px;
+            width: 75px;
+            border-radius: 1px;
+        }
+
+        .Payment-mode {
+            display: flex;
+        }
+
+        .lililili {
+            color: white;
+        }
+
+        h4 {
+            font-size: 26px;
+            font-family: none;
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+
+        .foot1 {
+            position: relative;
+            left: 400px;
+        }
+
+        .foot2 {
+            position: absolute;
+            left: 680px;
+        }
+
+        .foot3 {
+            position: absolute;
+            left: 890px;
+        }
+
+        .foot4 {
+            position: relative;
+
+        }
+
+        .logopageline {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 200px;
+            border-radius: 107px;
+        }
+
+        i {
+            color: white;
+        }
+
+
+        .shop {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .space-1 {
+            position: relative;
+            left: -206px;
+            top: 41px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <div class="contain">
+            <h1>BEST SELLERS<a href="../Assessment/bestsellers.html"> View more</a></h1>
+
+        </div>
+        <div class="contents">
+            <div class="images1">
+                <img src="../images.2/Playbox XZ Console Gold.jpg">
+                <p>PLAYBOX XZ GOLD EDITION</p>
+                <span>$99.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div class="images1">
+                <img src="../images.2/Echo Headset.jpg">
+                <p>ECHO HEADSET</p>
+                <span>$39.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div class="images1">
+                <img src="../images.2/Gaming Chair.jpg">
+                <p>GAMING CHAIR</p>
+                <span>$116.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div class="images1">
+                <img src="../images.2/joi.jpg">
+                <p>X-SERIES</p>
+                <span>$24.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <h1>SHOP BY CATEGORY</h1>
+        <br>
+        <br>
+        <div class="shop">
+            <div>
+                <img src="../images.2/wave gen rx.webp">
+                <a href="../Assessment/console.html" class="space-1">CONSOLE</a>
+                <!-- <p>CONSOLES<a href="../Assessment/console.html" class="space-1"></a></p> -->
+
+            </div>
+            <div>
+                <img src="../images.2/Accessories.jpg">
+                <a href="../Assessment/Accessories.html" class="space-1">ACCESSORIES</a>
+
+            </div>
+            <div>
+                <img src="../images.2/Controllers.jpg">
+                <a href="../Assessment/Controllers.html" class="space-1">CONTROLLERS</a>
+                <br><br><br>
+
+
+            </div>
+        </div>
+    </section><br><br>
+    <section>
+        <div class="consoles"></div>
+        <h1>CONSOLES<a href="../Assessment/console.html">View all</a></h1>
+        <div class="contents1">
+            <div>
+                <img src="../images.2/Gameflow Console WH.jpg">
+                <p>GAME FLOW CONSOLE</p>
+                <span>$521.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Gameflow console black.jpg">
+                <p>GAME FLOW CONSOLE BLACK</p>
+                <span>$900.00</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Veritas Vr set.webp">
+                <p>VERITAS VR SET CONSOLE</p>
+                <span>$629.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section>
+        <div class="controlers">
+            <h1>CONTROLLERS<a href="../Assessment/Controllers.html">CONTROLLERS</a></h1>
+            <div class="contents2">
+                <div>
+                    <img src="../images.2/Stealth X.jpg">
+                    <p>STEALTH-X</p>
+                    <span>$560.00</span>
+                    <br>
+
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <img src="../images.2/Flint.jpg">
+                    <p>FLINT</p>
+                    <span>$690.00</span>
+                    <br>
+                    <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <img src="../images.2/Ghost.jpg">
+                    <p>GHOST</p>
+                    <span>$480.00</span>
+                    <br>
+
+                    <button>ADD TO CART</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section><br><br>
+    <section>
+        <div class="games">
+            <h1>GAMES<a href="../Assessment/Games.html">GAMES</a></h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="games1">
+            <div>
+                <img src="../images.2/Ancient Souls.jpg">
+                <p>ANCIENT SOULS GAME</p>
+                <span>$67.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Chrono Split.jpg">
+                <p>CHRONO SPLIT GAME</p>
+                <span>$89.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Cyber Kid.jpg">
+                <p>CYBER KID INFINITE GAME</p>
+                <span>$75.99</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+    </section><br><br>
+    <section>
+        <div>
+            <h1>ACCESORIES<a href="./Accessories.html">ACCESORIES</a></h1>
+
+        </div>
+        <div class="accesories">
+            <div>
+                <img src="../images.2/C0 21 Mechanical Keyboard.webp">
+                <p>MECHANICAL KEYBOARD</p>
+                <span>$45.00</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Veritas Vr set.webp">
+                <p>VERITAS VR-SET HEADSET</p>
+                <span>$43.00</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../images.2/Flint.jpg">
+                <p>FLINT CONTROLLER</p>
+                <span>$38.00</span>
+                <br>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section">
+            <h1>NEWSELETTER</h1>
+            <p>Sign up to receive updates on new <br> products and special offers</p>
+
+            <label class="mail">Email *</label> <br>
+            <input class="tabel mail" type="mail" name="mail" placeholder="Enter Your Mail">
+            <button style="margin-left: 800px;">Submit</button><br>
+            <input style="margin-left:400px ;" class="check" type="checkbox" name="check"><label>Yes,Subscribe me to
+                your newsletter.</label>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="continer">
+            <div class="row">
+                <div>
+                    <img src="../images.2/logo.jpg" class="logopageline">
+                </div>
+                <div class="footer-cool foot1">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Our services</li>
+                        <li>Privacy policy</li>
+                        <li>Affiliate program</li>
+                    </ul>
+                </div>
+                <div class="footer-cool foot2">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
+                        <li>Order status</li>
+                    </ul>
+                </div>
+                <div class="footer-cool foot3">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>Games</li>
+                        <li>Consoles</li>
+                        <li>Controllers</li>
+                        <li>Accessories</li>
+                    </ul>
+                </div>
+                <div class="footer-cool foot4">
+                    <h4>Follow Us</h4>
+                    <div class="sociallinks">
+                        <ul>
+                            <!-- <a href="https://x.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a> -->
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-linkedin"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> <br>
+        <section>
+            <h3>Payment Mode</h3> <br>
+            <div class="Payment-mode">
+                <img src="../images.2/debit.jpg" alt="" class="ooo">
+                <img src="../images.2/visa card.jpg" alt="" class="ooo">
+                <img src="../images.2/upi.jpg" alt="" class="ooo">
+                <img src="../images.2/cash.jpg" alt="" class="ooo">
+            </div>
+        </section>
+    </footer>
+
+</body>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

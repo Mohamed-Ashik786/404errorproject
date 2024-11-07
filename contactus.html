@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: black;
+            height: 800px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .address-class {
+            position: relative;
+            left: 100px;
+        }
+
+        .from-class {
+            position: relative;
+            top: 80px;
+            left: 300px;
+
+        }
+
+        .con-head {
+            font-size: 65px;
+            color: white;
+
+        }
+
+        .con-con {
+            font-size: 25px;
+            color: white;
+
+        }
+
+        .p-con {
+            color: white;
+        }
+
+        .f-na {
+            color: white;
+            font-size: 17px;
+            font-family: math;
+
+        }
+
+        input.frst-na {
+            background-color: black;
+            color: white;
+            border: 2px solid blueviolet;
+            padding: 12px 30px;
+            border-radius: 10px;
+        }
+
+        .l-na {
+            color: white;
+            font-size: 17px;
+            font-family: math;
+        }
+
+        input.last-na {
+            background-color: black;
+            color: white;
+            border: 2px solid blueviolet;
+            padding: 12px 30px;
+            border-radius: 10px;
+        }
+
+        .e-ma {
+            color: white;
+            font-size: 17px;
+            font-family: math;
+        }
+
+        input.email {
+            background-color: black;
+            color: white;
+            border: 2px solid blueviolet;
+            padding: 12px 30px;
+            border-radius: 10px;
+        }
+
+        .ph {
+            color: white;
+            font-size: 17px;
+            font-family: math;
+        }
+
+        input.num {
+            background-color: black;
+            color: white;
+            border: 2px solid blueviolet;
+            padding: 12px 30px;
+            border-radius: 10px;
+        }
+
+
+        textarea {
+            background-color: black;
+            color: white;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            height: 150px;
+            width: 517px;
+            position: relative;
+            top: 72px;
+        }
+
+        input.sub {
+            position: relative;
+            top: 100px;
+            left: 200px;
+            padding: 12px 31px;
+            background: blueviolet;
+            color: white;
+            font-size: 16px;
+            font-family: math;
+            border: 2px solid blueviolet;
+            border-radius: 8px;
+        }
+
+
+
+        .div2 {
+            position: absolute;
+            top: 0px;
+            left: 300px;
+        }
+
+        .div3 {
+            position: relative;
+            top: 60px;
+        }
+
+        .div4 {
+            position: relative;
+            left: 300px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-6 address-class">
+                <h1 class="con-head">NEED A HAND?</h1>
+                <h5 class="con-con">Contact Us</h5>
+                <p class="p-con con-line1">info@mysite.com</p>
+                <p class="p-con con-line2">123-456-7890</p>
+                <p class="p-con con-line3">500 Terry Francine Street San</p>
+                <p class="p-con con-line4">Francisco, CA 94158</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62385.75454491438!2d79.02805282343986!3d12.240853730752772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc0852cd3d6cd%3A0x74002b16e5bac856!2sTiruvannamalai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1728281628441!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>
+            <div class="col-sm-6 from-class">
+                <div class="div1">
+                    <lable class="f-na">First name *</lable><br>
+                    <input type="text" class="frst-na">
+                </div>
+                <div class="div2">
+                    <lable class="l-na">Lastname *</lable><br>
+                    <input type="text" class="last-na"><br>
+                </div>
+                <div class="div3">
+                    <label class="e-ma">Email *</label><br>
+                    <input type="email" class="email">
+                </div>
+                <div class="div4">
+                    <label class="ph">Phone</label><br>
+                    <input type="number" class="num"><br>
+                </div>
+                <div class="div5">
+                    <textarea placeholder="Leave Your Meassage Here.........."></textarea>
+                </div>
+                <input type="submit" placeholder="SUBMIT" class="sub">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
